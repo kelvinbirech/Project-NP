@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netpro Telecom - Network Professionals</title>
+    <meta name="description" content="Experience lightning-fast fiber internet across Kenya. Reliable connectivity, competitive packages, and exceptional customer service for homes and businesses.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Interactive Particle Canvas -->
+    <canvas id="particle-canvas" class="particle-canvas"></canvas>
+    <div class="scroll-indicator"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand">
+                <div class="nav-logo">
+                    <img src="images/Nav-logo.png" alt="Netpro Telecom Logo" width="32" height="32" style="object-fit: contain;">
+                </div>
+                <span class="nav-title">Netpro Telecom</span>
+                
+            </a>
+            
+            <div class="nav-links" id="nav-links">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#packages" class="nav-link">Packages</a>
+                <a href="#speed-test" class="nav-link">Speed Test</a>
+                 <a href="#about" class="nav-link">About</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-cta">Get Connected</a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+          
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-grid"></div>
+            <div class="hero-gradient"></div>
+             <div class="circuit-animation"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+   
+                    <h1 class="hero-title">
+  Trust the pros<br>
+  Go <span style="color: #003049;">Net</span><span style="color: #f77f00;">Pro</span>
+</h1>
+
+                
+                <p class="hero-description">
+                    At Netpro Telecom, we provide high-speed fibre internet, cutting-edge digital solutions, and professional IT services designed for homeowners, businesses, and organisations.  From dependable connectivity to experienced consulting, we help you stay ahead with technology that works for you.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#packages" class="btn btn-primary">View Packages</a>
+                    <a href="#services" class="btn btn-secondary">Check Services</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="hero-card">
+                    <div class="card-header">
+                        <div class="card-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="card-title">Network Status</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="status-item">
+                            <span>Download Speed</span>
+                            <div class="status-indicator active"></div>
+                            <span class="status-value">100 Mbps</span>
+                        </div>
+                        <div class="status-item">
+                            <span>Upload Speed</span>
+                            <div class="status-indicator active"></div>
+                            <span class="status-value">100 Mbps</span>
+                        </div>
+                        <div class="status-item">
+                            <span>Latency</span>
+                            <div class="status-indicator active"></div>
+                            <span class="status-value">&lt; 5ms</span>
+                        </div>
+                        <div class="status-item">
+                            <span>Uptime</span>
+                            <div class="status-indicator active"></div>
+                            <span class="status-value">99.9%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+   <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Our Premium Services</div>
+                <h2 class="section-title">Complete Digital Solutions</h2>
+                <p class="section-description">
+                    From high-speed fiber internet to comprehensive IT support and security solutions, 
+                    we provide everything your business needs to stay connected and secure.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-header">
+                      <div class="service-icon">💻</div>
+                    </div>
+                    <h3 class="service-title">IT Solutions</h3>
+                    <p class="service-description">
+                        Complete IT consultancy, network setup, and digital transformation services.
+                    </p>
+                    <ul class="service-features">
+                        <li>Network Setup & Configuration</li>
+                        <li>Hardware Troubleshooting</li>
+                        <li>Software Installation & Updates</li>
+                        <li>Remote Support Available</li>
+                        <li>Data Backup & Recovery</li>
+                    </ul>
+                    <button class="service-link" onclick="showServiceDetails('it-support')">
+                        Learn More
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"/>
+                            <path d="M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="service-card featured">
+                    <div class="service-header">
+                        <div class="service-icon">⚡</div>
+                        <div class="service-badge">Most Popular</div>
+                    </div>
+                    <h3 class="service-title">Fiber Internet</h3>
+                    <p class="service-description">
+                        Ultra-fast fiber optic internet with speeds up to 100 Mbps. Perfect for businesses, 
+                        streaming, gaming, and heavy internet usage with 99.9% uptime guarantee.
+                    </p>
+                    <ul class="service-features">
+                        <li>Speeds up to 100 Mbps</li>
+                        <li>99.9% Uptime Guarantee</li>
+                        <li>Unlimited Data Usage</li>
+                        <li>24/7 Technical Support</li>
+                        <li>Professional Installation</li>
+                    </ul>
+                    <a href="#packages" class="service-link">
+                        View Packages
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"/>
+                            <path d="M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-header">
+                      <div class="service-icon">🛡️</div>
+                    </div>
+                   <h3 class="service-title">Security Solutions</h3>
+                    <p class="service-description">
+                        Advanced CCTV surveillance systems and security monitoring to protect your property and ensure peace of mind.
+                    </p>
+                    <ul class="service-features">
+                        <li>HD CCTV cameras</li>
+                        <li>24/7 monitoring</li>
+                        <li>Mobile app access</li>
+                        <li>Professional installation</li>
+                    </ul>
+                    <button class="service-link" onclick="showServiceDetails('security')">
+                        Learn More
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Modal -->
+    <div id="service-modal" class="service-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Service Details</h3>
+                <button class="modal-close" onclick="closeServiceModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Packages Section -->
+    <section class="packages" id="packages">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Internet Packages</div>
+                <h2 class="section-title">Choose Your Perfect Plan</h2>
+                <p class="section-description">
+                    Flexible fiber internet packages designed to meet your specific needs, from basic browsing to high-demand business operations.
+                </p>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <div class="package-name">Lite</div>
+                        <div class="package-speed">
+                            <span class="speed-value">5</span>
+                            <span class="speed-unit">Mbps</span>
+                        </div>
+                        <div class="package-price">
+                            <span class="currency">KSh</span>
+                            <span class="price-value">1,500</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <div class="package-subtitle">Perfect for basic browsing</div>
+                    </div>
+                    <ul class="package-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Basic streaming
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Email & browsing
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Light usage
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Up to 3 devices
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Get Started</a>
+                </div>
+                
+                <div class="package-card featured">
+                   <div class="popular-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                        Most Popular
+                    </div>
+                    <div class="package-header">
+                        <div class="package-name">Standard</div>
+                        <div class="package-speed">
+                            <span class="speed-value">8</span>
+                            <span class="speed-unit">Mbps</span>
+                        </div>
+                        <div class="package-price">
+                            <span class="currency">KSh</span>
+                            <span class="price-value">2,000</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <div class="package-subtitle">Great for families</div>
+                    </div>
+                    <ul class="package-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            HD Streaming
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Videe calls
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Online Gaming
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Up to 5 devices
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full">Get Started</a>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <div class="package-name">Plus</div>
+                        <div class="package-speed">
+                            <span class="speed-value">10</span>
+                            <span class="speed-unit">Mbps</span>
+                        </div>
+                        <div class="package-price">
+                            <span class="currency">KSh</span>
+                            <span class="price-value">2,300</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <div class="package-subtitle">Ideal for streaming</div>
+                    </div>
+                    <ul class="package-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Multiple HD streams
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Smart home devices
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                           Gaming
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Up to 7 devices
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Get Started</a>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <div class="package-name">Pro</div>
+                        <div class="package-speed">
+                            <span class="speed-value">15</span>
+                            <span class="speed-unit">Mbps</span>
+                        </div>
+                        <div class="package-price">
+                            <span class="currency">KSh</span>
+                            <span class="price-value">2,800</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <div class="package-subtitle">Perfect for gaming</div>
+                    </div>
+                    <ul class="package-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Multiple HD streams
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Heavy usage
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Work from home
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Up to 10 devices
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Get Started</a>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <div class="package-name">Max</div>
+                        <div class="package-speed">
+                            <span class="speed-value">20</span>
+                            <span class="speed-unit">Mbps</span>
+                        </div>
+                        <div class="package-price">
+                            <span class="currency">KSh</span>
+                            <span class="price-value">3,400</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <div class="package-subtitle">Small business solution</div>
+                    </div>
+                    <ul class="package-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            4K streaming
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Heavy usage
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Multiple users
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Up to 10 devices
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Get Started</a>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <div class="package-name">Ultra</div>
+                        <div class="package-speed">
+                            <span class="speed-value">30</span>
+                            <span class="speed-unit">Mbps</span>
+                        </div>
+                        <div class="package-price">
+                            <span class="currency">KSh</span>
+                            <span class="price-value">4,500</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <div class="package-subtitle">Enterprise grade</div>
+                    </div>
+                    <ul class="package-features">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Ultra HD streaming
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Professional gaming
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Business applications
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            Up to 15 devices
+                        </li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Section -->
+    
+    <!-- Speed Test Section -->
+    <section class="speed-test" id="speed-test">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Test Your Connection</div>
+                <h2 class="section-title">Speed Test Tools</h2>
+                <p class="section-description">
+                    Test your current internet speed and see how Netpro Telecom's fiber network can improve your online experience.
+                </p>
+            </div>
+            
+            <div class="speed-test-grid">
+               
+                <div class="speed-test-card">
+                    <div class="test-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3>Fast.com</h3>
+                    <p>Netflix's simple and fast internet speed test. Quick and easy way to check your connection speed without ads or distractions.</p>
+                    <a href="https://fast.com" target="_blank" class="btn btn-outline">Test Speed</a>
+                </div>
+                 <div class="speed-test-card featured">
+                    <div class="test-badge">Most Popular</div>
+                    <div class="test-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                    </div>
+                    <h3>Speedtest.net</h3>
+                    <p>The most trusted internet speed test platform worldwide. Get accurate measurements of your download, upload, and ping speeds.</p>
+                    <a href="https://www.speedtest.net" target="_blank" class="btn btn-primary">Test Speed</a>
+                </div>
+                
+                <div class="speed-test-card">
+                    <div class="test-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>nPerf</h3>
+                    <p>Comprehensive internet speed test with detailed analysis. Test download, upload, ping, and browsing quality all in one place.</p>
+                    <a href="https://www.nperf.com" target="_blank" class="btn btn-outline">Test Speed</a>
+                </div>
+            </div>
+            
+            <div class="speed-guide">
+                <h3>Understanding Your Speed Test Results</h3>
+                <div class="guide-grid">
+                    <div class="guide-item">
+                        <div class="guide-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7,10 12,15 17,10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                        </div>
+                        <h4>Download Speed</h4>
+                        <p>How fast you can receive data from the internet. Important for streaming, browsing, and downloading files.</p>
+                    </div>
+                    
+                    <div class="guide-item">
+                        <div class="guide-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="17,8 12,3 7,8"/>
+                                <line x1="12" y1="3" x2="12" y2="15"/>
+                            </svg>
+                        </div>
+                        <h4>Upload Speed</h4>
+                        <p>How fast you can send data to the internet. Essential for video calls, uploading files, and cloud backups.</p>
+                    </div>
+                    
+                    <div class="guide-item">
+                        <div class="guide-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                        </div>
+                        <h4>Ping/Latency</h4>
+                        <p>Response time of your connection. Lower is better for gaming, video calls, and real-time applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">About Netpro Telecom</div>
+                <h2 class="section-title">Network Professionals</h2>
+                <p class="section-description">
+                   We are more than just an internet provider; we are your digital growth partner, providing world-class service to homes and businesses across Kenya. </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                       At Netpro Telecom, we go beyond connectivity.  Our comprehensive IT solutions are intended to help you navigate your digital journey, whether you're running a business, managing remote teams, or improving your home IT environment.
+                        </p>
+                    
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Happy Customers</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="stat-number">99.9%</div>
+                            <div class="stat-label">Network Uptime</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Customer Support</div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span>Cutting-edge fiber optic technology</span>
+                        </div>
+                        <div class="about-feature">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span>Local customer support team</span>
+                        </div>
+                        <div class="about-feature">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span>Network Design & Security</span>
+                        </div>
+                        <div class="about-feature">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span>Consulting & Digital Transformation</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">Get Connected Today</a>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-card">
+                        <img src="https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Fiber optic cables" loading="lazy">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h4>Beyond Internet — Complete IT Solutions</h4>
+                                <p>We don’t just keep you connected; we keep you running. From fast, stable internet to managed IT support, we’re your all-in-one digital partner..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Frequently Asked Questions</div>
+                <h2 class="section-title">Got Questions? We Have Answers</h2>
+                <p class="section-description">
+                    Find answers to common questions about our services, installation process, and support options.
+                </p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>How long does installation take?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Installation typically takes 2-4 hours depending on your location and setup requirements. Our technicians will schedule a convenient time and ensure everything is working perfectly before they leave.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>What equipment do I need?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We handle the entire setup. You'll need a WiFi router, which you may either bring with you or buy from us for an extra fee. Our technicians will configure everything during the installation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>Is there a data limit on your plans?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No, all our fiber internet plans come with unlimited data. You can stream, download, and browse as much as you want without worrying about data caps or overage charges.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>What if I experience technical issues?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our 24/7 customer support team is always ready to help. You can reach us by phone or email. Most issues can be resolved remotely, but we'll send a technician if needed.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>Can I upgrade or downgrade my plan?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you can change your plan at any time. Upgrades take effect immediately, while downgrades take effect at the start of your next billing cycle. Contact our support team to make changes.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <h3>Do you offer business packages?</h3>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer specialized business packages with dedicated bandwidth, SLA guarantees, and priority support. Contact our business team for custom solutions tailored to your company's needs.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <div class="faq-cta-content">
+                    <div class="faq-cta-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <h3>Still have questions?</h3>
+                    <p>Our friendly customer service team is here to help you find the perfect internet solution.</p>
+                    <a href="#contact" class="btn btn-primary">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Get Connected</div>
+                <h2 class="section-title">Ready to Experience Fiber Speed?</h2>
+                <p class="section-description">
+                    Contact us today to get started with Netpro Telecom's high-speed fiber internet and Digital Solutions. Our team is ready to help you choose the perfect plan.
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Phone</h4>
+                                    <p>+254 769 082 334</p>
+                                    <p>+254 798 984 167</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <p>netprotelecomke@gmail.com</p>
+                                    <p>support@netprotelecom.co.ke</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Office</h4>
+                                    <p>Nairobi, Kenya</p>
+                                    <p>Available for site visits</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Business Hours</h4>
+                                    <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+                                    <p>Sat: 9:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Let’s Build Your Solution</h3>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Interest</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="fiber-internet">Fiber Internet</option>
+                                    <option value="business-solutions">Business Solutions</option>
+                                    <option value="it-support">IT Support</option>
+                                    <option value="security-systems">Security Systems</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your internet needs..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                            </svg>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <img src="images/Nav-logo.png" alt="Netpro Telecom Logo" width="32" height="32" style="object-fit: contain;">
+                        </div>
+                        <span class="footer-logo-text">Netpro Telecom</span>
+                    </div>
+                    <p class="footer-description">
+                        Our goal is to see you grow.  Whether you need a dependable IT partner or a full-service IT department, we're here to help you stay secure, efficient, and future-ready.
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+254 769 082 334</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>netprotelecomke@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#packages">Fiber Internet</a></li>
+                            <li><a href="it-services.html">IT Support</a></li>
+                            <li><a href="security-surveillance.html">Security Solutions</a></li>
+                            <li><a href="#contact">Business Solutions</a></li>
+                            <li><a href="#speed-test">Speed Test</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#coverage">Coverage</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#contact">Support</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#speed-test">Speed Test</a></li>
+                            <li><a href="#packages">Plans & Pricing</a></li>
+                            <li><a href="#coverage">Coverage Map</a></li>
+                            <li><a href="#contact">Installation</a></li>
+                            <li><a href="#faq">Help Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Netpro Telecom. All rights reserved.</p>
+               <!-- <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

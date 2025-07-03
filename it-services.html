@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetPro IT Solutions - Transform Your Business with Smart IT Solutions</title>
+    <meta name="description" content="Leading IT consultancy in Kenya offering network setup, cybersecurity, business automation, and digital transformation services for SMEs and enterprises.">
+    <link rel="stylesheet" href="it-services.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Interactive Particle Canvas -->
+    <canvas id="particle-canvas" class="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <div class="nav-logo">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <span class="nav-title">NetPro Telecom</span>
+            </a>
+            
+            <div class="nav-links" id="nav-links">
+                <a href="index.html" class="nav-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9,22 9,12 15,12 15,22"/>
+                    </svg>
+                    Back to Netpro Telecom
+                </a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-cta">Get Started Today</a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-grid"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <!-- Back to Home Button -->
+                <div class="back-home-container">
+                    <a href="index.html" class="back-home-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 12H5"/>
+                            <path d="M12 19l-7-7 7-7"/>
+                        </svg>
+                        Back to Netpro Telecom Home
+                    </a>
+                </div>
+                
+                <diiv class="hero-badge">
+                    <div class="badge-dot"></div>
+                    <span>Trusted IT Partner Since 2020</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Transform Your Business with 
+                    <span class="title-highlight">Smart IT Solutions</span>
+                </h1>
+                
+                <p class="hero-description">
+                    We help Kenyan businesses leverage technology to increase efficiency, enhance security, and drive growth. From network infrastructure to digital transformation, we're your complete IT partner.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get Started Today</a>
+                    <a href="#services" class="btn btn-secondary">Explore Services</a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Businesses Served</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime Guarantee</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support Available</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="hero-card">
+                    <div class="card-header">
+                        <div class="card-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="card-title">System Status</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="status-item">
+                            <span>Network Security</span>
+                            <div class="status-indicator active"></div>
+                            <span class="status-value">Protected</span>
+                        </div>
+                        <div class="status-item">
+                            <span>System Performance</span>
+                            <div class="status-indicator active"></div>
+                            <span class="status-value">Optimal</span>
+                        </div>
+                        <div class="status-item">
+                            <span>Data Backup</span>
+                            <div class="status-indicator active"></div>
+                            <span class="status-value">Synchronized</span>
+                        </div>
+                        <div class="status-item">
+                            <span>Support Response</span>
+                            <div class="status-indicator active"></div>
+                            <span class="status-value">&lt; 15min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Our Expertise</div>
+                <h2 class="section-title">Complete IT Services Portfolio</h2>
+                <p class="section-description">
+                    From infrastructure setup to digital transformation, we provide comprehensive IT solutions tailored to your business needs.
+                </p>
+            </div>
+            
+            <div class="services-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="infrastructure">Infrastructure</button>
+                    <button class="tab-btn" data-tab="security">Security</button>
+                    <button class="tab-btn" data-tab="automation">Automation</button>
+                    <button class="tab-btn" data-tab="transformation">Digital Transform</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-panel active" id="infrastructure">
+                        <div class="service-grid">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                        <line x1="8" y1="21" x2="16" y2="21"/>
+                                        <line x1="12" y1="17" x2="12" y2="21"/>
+                                    </svg>
+                                </div>
+                                <h3>Network Setup & Configuration</h3>
+                                <p>Professional network infrastructure design and implementation for optimal performance and scalability.</p>
+                                <ul>
+                                    <li>LAN/WAN setup</li>
+                                    <li>Router & switch configuration</li>
+                                    <li>WiFi optimization</li>
+                                    <li>Network monitoring</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/>
+                                        <line x1="7" y1="2" x2="7" y2="22"/>
+                                        <line x1="17" y1="2" x2="17" y2="22"/>
+                                        <line x1="2" y1="12" x2="22" y2="12"/>
+                                        <line x1="2" y1="7" x2="7" y2="7"/>
+                                        <line x1="2" y1="17" x2="7" y2="17"/>
+                                        <line x1="17" y1="17" x2="22" y2="17"/>
+                                        <line x1="17" y1="7" x2="22" y2="7"/>
+                                    </svg>
+                                </div>
+                                <h3>Server Management</h3>
+                                <p>Complete server solutions including setup, maintenance, and optimization for maximum uptime.</p>
+                                <ul>
+                                    <li>Server installation</li>
+                                    <li>Performance optimization</li>
+                                    <li>Regular maintenance</li>
+                                    <li>Disaster recovery</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                        <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                                        <line x1="12" y1="22.08" x2="12" y2="12"/>
+                                    </svg>
+                                </div>
+                                <h3>Cloud Solutions</h3>
+                                <p>Seamless cloud migration and management services to modernize your IT infrastructure.</p>
+                                <ul>
+                                    <li>Cloud migration</li>
+                                    <li>Hybrid solutions</li>
+                                    <li>Data synchronization</li>
+                                    <li>Cost optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-panel" id="security">
+                        <div class="service-grid">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    </svg>
+                                </div>
+                                <h3>Cybersecurity Solutions</h3>
+                                <p>Comprehensive security measures to protect your business from cyber threats and data breaches.</p>
+                                <ul>
+                                    <li>Firewall configuration</li>
+                                    <li>Antivirus deployment</li>
+                                    <li>Security audits</li>
+                                    <li>Threat monitoring</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 12l2 2 4-4"/>
+                                        <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+                                        <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+                                        <path d="M13 12h3a2 2 0 0 1 2 2v1"/>
+                                        <path d="M11 12H8a2 2 0 0 0-2 2v1"/>
+                                    </svg>
+                                </div>
+                                <h3>Data Protection</h3>
+                                <p>Robust data backup and recovery solutions to ensure business continuity and compliance.</p>
+                                <ul>
+                                    <li>Automated backups</li>
+                                    <li>Data encryption</li>
+                                    <li>Recovery planning</li>
+                                    <li>Compliance support</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                                    </svg>
+                                </div>
+                                <h3>Security Training</h3>
+                                <p>Employee training programs to build security awareness and prevent human error vulnerabilities.</p>
+                                <ul>
+                                    <li>Security awareness</li>
+                                    <li>Phishing prevention</li>
+                                    <li>Best practices</li>
+                                    <li>Regular updates</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-panel" id="automation">
+                        <div class="service-grid">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                                    </svg>
+                                </div>
+                                <h3>Process Automation</h3>
+                                <p>Streamline business processes with intelligent automation solutions to increase efficiency.</p>
+                                <ul>
+                                    <li>Workflow automation</li>
+                                    <li>Task scheduling</li>
+                                    <li>Report generation</li>
+                                    <li>System integration</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                    </svg>
+                                </div>
+                                <h3>Business Intelligence</h3>
+                                <p>Transform data into actionable insights with advanced analytics and reporting solutions.</p>
+                                <ul>
+                                    <li>Data analytics</li>
+                                    <li>Custom dashboards</li>
+                                    <li>Performance metrics</li>
+                                    <li>Predictive analysis</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                                    </svg>
+                                </div>
+                                <h3>Document Management</h3>
+                                <p>Digital document solutions for better organization, security, and collaboration.</p>
+                                <ul>
+                                    <li>Digital filing</li>
+                                    <li>Version control</li>
+                                    <li>Access management</li>
+                                    <li>Collaboration tools</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-panel" id="transformation">
+                        <div class="service-grid">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
+                                        <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
+                                        <path d="M13 12h3a2 2 0 0 1 2 2v1"/>
+                                        <path d="M11 12H8a2 2 0 0 0-2 2v1"/>
+                                    </svg>
+                                </div>
+                                <h3>Digital Strategy</h3>
+                                <p>Comprehensive digital transformation roadmaps aligned with your business objectives.</p>
+                                <ul>
+                                    <li>Strategy development</li>
+                                    <li>Technology roadmap</li>
+                                    <li>Change management</li>
+                                    <li>ROI optimization</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                        <path d="M2 17l10 5 10-5"/>
+                                        <path d="M2 12l10 5 10-5"/>
+                                    </svg>
+                                </div>
+                                <h3>System Integration</h3>
+                                <p>Seamlessly connect disparate systems for improved data flow and operational efficiency.</p>
+                                <ul>
+                                    <li>API development</li>
+                                    <li>Data migration</li>
+                                    <li>System connectivity</li>
+                                    <li>Performance optimization</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2z"/>
+                                        <path d="M13 11h4a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2z"/>
+                                        <path d="M9 7V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v3"/>
+                                    </svg>
+                                </div>
+                                <h3>Training & Support</h3>
+                                <p>Comprehensive training programs to ensure successful technology adoption across your organization.</p>
+                                <ul>
+                                    <li>User training</li>
+                                    <li>Documentation</li>
+                                    <li>Ongoing support</li>
+                                    <li>Knowledge transfer</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Why Choose Us</div>
+                <h2 class="section-title">Benefits of Working with NetPro Telecom</h2>
+                <p class="section-description">
+                    We deliver measurable results that drive business growth and operational excellence.
+                </p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Local Expertise</h3>
+                    <p>Deep understanding of the Kenyan business environment and regulatory requirements.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock technical support to ensure your systems are always running smoothly.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Security First</h3>
+                    <p>Enterprise-grade security measures to protect your business data and operations.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3>Cost Effective</h3>
+                    <p>Competitive pricing with transparent costs and no hidden fees for all our services.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>Scalable Solutions</h3>
+                    <p>Technology solutions that grow with your business, from startup to enterprise level.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Expert Team</h3>
+                    <p>Certified professionals with extensive experience in enterprise IT solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Trust & Credentials</div>
+                <h2 class="section-title">Certifications & Partnerships</h2>
+                <p class="section-description">
+                    Our certifications and partnerships demonstrate our commitment to excellence and industry standards.
+                </p>
+            </div>
+            
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>ISO 27001</h3>
+                    <p>Information Security Management</p>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3>Microsoft Partner</h3>
+                    <p>Certified Solutions Provider</p>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Cisco Certified</h3>
+                    <p>Network Infrastructure Specialist</p>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>CompTIA Security+</h3>
+                    <p>Cybersecurity Professional</p>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                            <path d="M12 17h.01"/>
+                        </svg>
+                    </div>
+                    <h3>ITIL Foundation</h3>
+                    <p>IT Service Management</p>
+                </div>
+                
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+                            <path d="M9 14l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3>Kenya ICT Board</h3>
+                    <p>Registered IT Service Provider</p>
+                </div>
+            </div>
+            
+            <div class="trust-stats">
+                <div class="trust-stat">
+                    <div class="trust-number">99.9%</div>
+                    <div class="trust-label">Client Satisfaction</div>
+                </div>
+                <div class="trust-stat">
+                    <div class="trust-number">200+</div>
+                    <div class="trust-label">Projects Completed</div>
+                </div>
+                <div class="trust-stat">
+                    <div class="trust-number">5+</div>
+                    <div class="trust-label">Years Experience</div>
+                </div>
+                <div class="trust-stat">
+                    <div class="trust-number">24/7</div>
+                    <div class="trust-label">Support Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Get Started</div>
+                <h2 class="section-title">Ready to Transform Your Business?</h2>
+                <p class="section-description">
+                    Contact us today for a free consultation and discover how we can help optimize your IT infrastructure.
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Phone</h4>
+                                    <p>+254 700 123 456</p>
+                                    <p>+254 733 987 654</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <p>netprotelecomke@gmail.com</p>
+                                    <p>support@netproit.co.ke</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Office</h4>
+                                    <p>Nairobi, Kenya</p>
+                                    <p>Available for on-site visits</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Business Hours</h4>
+                                    <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+                                    <p>24/7 Emergency Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Request a Free Consultation</h3>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="network-setup">Network Setup & Configuration</option>
+                                <option value="cybersecurity">Cybersecurity Solutions</option>
+                                <option value="automation">Business Automation</option>
+                                <option value="digital-transformation">Digital Transformation</option>
+                                <option value="cloud-solutions">Cloud Solutions</option>
+                                <option value="it-support">IT Support & Maintenance</option>
+                                <option value="consultation">General Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your IT needs and challenges..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                            </svg>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <span class="footer-logo-text">NetPro IT</span>
+                    </div>
+                    <p class="footer-description">
+                        Leading IT consultancy in Kenya, providing comprehensive technology solutions for businesses of all sizes. Transform your operations with our expert IT services.
+                    </p>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <span>+254 700 123 456</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>netprotelecomke@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#services">Network Setup</a></li>
+                            <li><a href="#services">Cybersecurity</a></li>
+                            <li><a href="#services">Business Automation</a></li>
+                            <li><a href="#services">Digital Transformation</a></li>
+                            <li><a href="#services">Cloud Solutions</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#benefits">About Us</a></li>
+                            <li><a href="#certifications">Certifications</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#contact">Support</a></li>
+                            <li><a href="index.html">Netpro Telecom</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#contact">Free Consultation</a></li>
+                            <li><a href="#services">Service Guide</a></li>
+                            <li><a href="#benefits">Case Studies</a></li>
+                            <li><a href="#certifications">Partnerships</a></li>
+                            <li><a href="#contact">24/7 Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 NetPro IT Solutions. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Data Protection</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="it-services.js"></script>
+</body>
+</html>
