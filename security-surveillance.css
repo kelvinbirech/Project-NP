@@ -370,7 +370,8 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+     background: linear-gradient(to bottom, rgba(0, 48, 73, 0.7), rgba(0, 48, 73, 0.3), rgba(0, 48, 73, 0)),
+              url('images/Security-im.jpg') no-repeat center center / cover;
     color: white;
     overflow: hidden;
     padding-top: 60px;
