@@ -37,6 +37,65 @@ body {
     }
 }
 
+/* WhatsApp Floating Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 1000;
+    background: #25d366;
+    color: white;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 12px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    animation: pulse-whatsapp 2s infinite;
+}
+
+@media (min-width: 640px) {
+    .whatsapp-float {
+        width: 48px;
+        height: 48px;
+        bottom: 24px;
+        right: 24px;
+    }
+}
+
+.whatsapp-float:hover {
+    background: #128c7e;
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-float svg {
+    width: 22px;
+    height: 22px;
+}
+
+@media (min-width: 640px) {
+    .whatsapp-float svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@keyframes pulse-whatsapp {
+    0% {
+        box-shadow: 0 3px 12px rgba(37, 211, 102, 0.3);
+    }
+    50% {
+        box-shadow: 0 3px 12px rgba(37, 211, 102, 0.4), 0 0 0 8px rgba(37, 211, 102, 0.08);
+    }
+    100% {
+        box-shadow: 0 3px 12px rgba(37, 211, 102, 0.3);
+    }
+}
+
 /* Full Screen Sections */
 section {
     min-height: 100vh;
@@ -1249,6 +1308,77 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.6;
     margin-bottom: 2rem;
     max-width: 24rem;
+}
+/* Social Media Icons */
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+    .footer-social {
+        gap: 1.5rem;
+    }
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 640px) {
+    .social-link {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.social-link.facebook:hover {
+    background: #1877f2;
+}
+
+.social-link.twitter:hover {
+    background: #1da1f2;
+}
+
+.social-link.instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-link.linkedin:hover {
+    background: #0077b5;
+}
+
+.social-link.youtube:hover {
+    background: #ff0000;
+}
+
+.social-link svg {
+    width: 16px;
+    height: 16px;
+}
+
+@media (min-width: 640px) {
+    .social-link svg {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .footer-contact {
