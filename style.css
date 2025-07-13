@@ -442,7 +442,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-menu-btn span {
     width: 1.25rem;
     height: 2px;
-    background: rgba(131, 39, 39, 0.9);
+    background: #ffffff;
     border-radius: 1px;
     transition: all 0.3s ease;
 }
