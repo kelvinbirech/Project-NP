@@ -548,12 +548,12 @@ function showServiceDetails(serviceType) {
     switch(serviceType) {
         case 'it-support':
             // Redirect to the dedicated IT services page
-            window.location.href = 'it-services.html';
+            window.location.href = "/it-services";
             return;
             
         case 'security':
             // Redirect to the dedicated security surveillance page
-            window.location.href = 'security-surveillance.html';
+            window.location.href = '/security-surveillance';
             return;
     }
     
